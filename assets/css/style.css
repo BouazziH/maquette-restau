@@ -1,0 +1,106 @@
+/*pour faire appel au font*/
+@font-face {
+    font-family: "playfair";
+    src: url(../font/PlayfairDisplay-Regular.ttf);
+}
+/* * c'est pour appliquer un style sur tout les elements*/
+*
+{
+font-family: "playfair";
+}
+body {
+  margin: 0;
+}
+h1,h2,h3{
+    letter-spacing: 0.3rem;
+}
+#headerImg {
+  /* border: 1px green solid; */
+  background-image: url(../img/hamburger.jpg);
+  height: 82vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  
+
+}
+#headerImg>h1
+{
+    margin: 2rem;
+    color:grey    ;
+    font-weight: 100;
+   
+}
+/*section about et menu */
+#about,#menu{
+    display: flex;
+    justify-content: space-between;
+    /*margin: 1rem 6rem 1rem 6rem;*/
+    width: 80%;
+    margin: 2rem auto;
+}
+#about>div,#menu div
+{
+    /*margin-right: 2rem;*/
+    width: 48%;
+  
+}
+#about img,#menu img{
+   width: 100%;
+}
+#about h2,#about h3{
+    text-align: center;
+}
+#about h3,#menu h3{
+    font-size:small ;
+    margin-top: 2rem;
+    
+}
+.badge{
+
+background-color: gray;
+padding:0 0.2rem;
+}
+#about p:last-child
+{
+    color: grey;
+}
+#menu p,#contact p{
+    color: #565D5f;
+    font-size: 0.7rem;
+}
+#contact
+{
+    width: 80%;
+    margin: 2rem auto;
+}
+#contact .adresse
+{
+    color: rgb(82, 81, 117);
+    font-weight: 600;
+}
+#contact input
+{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.05rem gray solid;
+    margin: 00.5rem 0;
+    padding: 0.5rem;
+
+}
+#contact .btn
+{
+border: none;
+width: fit-content;
+}
+footer
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(177, 174, 174);
+    padding: 2rem 0;
+}
