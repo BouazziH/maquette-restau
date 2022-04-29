@@ -1,3 +1,4 @@
+
 /*pour faire appel au font*/
 @font-face {
     font-family: "playfair";
@@ -23,9 +24,10 @@ h1,h2,h3{
   background-repeat: no-repeat;
   display: flex;
   align-items: flex-end;
-  
 
 }
+/*pour la version mobile faut rajouter cette proprietes css a la lettre*/
+
 #headerImg>h1
 {
     margin: 2rem;
@@ -34,7 +36,7 @@ h1,h2,h3{
    
 }
 /*section about et menu */
-#about,#menu{
+#about,#menu{    
     display: flex;
     justify-content: space-between;
     /*margin: 1rem 6rem 1rem 6rem;*/
@@ -50,7 +52,7 @@ h1,h2,h3{
 #about img,#menu img{
    width: 100%;
 }
-#about h2,#about h3{
+#about h2,#menu h2,#about h3{
     text-align: center;
 }
 #about h3,#menu h3{
@@ -67,6 +69,7 @@ padding:0 0.2rem;
 {
     color: grey;
 }
+
 #menu p,#contact p{
     color: #565D5f;
     font-size: 0.7rem;
@@ -103,4 +106,34 @@ footer
     justify-content: center;
     background-color: rgb(177, 174, 174);
     padding: 2rem 0;
+}
+@media screen and (max-width:576px)
+ {
+    #headerImg{
+        height: 15vh;
+        
+         } 
+          #headerImg>h1{
+              margin: 0.5em;
+              font-size: 1;
+          }
+          #about,#menu,#contact{
+            width: 95%;
+          }
+          #about
+         {
+             flex-direction: column-reverse;
+            
+         }
+         #menu{
+             flex-direction: column;
+         }
+         #about>div,#menu div
+         {
+            
+             width: 100%;
+           
+         }
+         
+    
 }
